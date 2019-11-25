@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     tools:layout_editor_absoluteX="3dp"
     tools:layout_editor_absoluteY="160dp"
-    android:background="@color/GreenBackground">
+    android:background="@drawable/background">
 
 
     <ImageView
