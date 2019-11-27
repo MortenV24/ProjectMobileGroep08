@@ -17,26 +17,26 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void NaarSpelen(View v){
-        // van huidige activiteit naar speel
-        Intent intNext = new Intent(this, speel.class);
+        // van huidige activiteit naar over Speel
+        Intent intNext = new Intent(this, Speel.class);
         startActivity(intNext);
     }
 
     public void NaarOefenen(View v){
-        // van huidige activiteit naar oefen
-        Intent intNext = new Intent(this, oefen.class);
+        // van huidige activiteit naar over Oefen
+        Intent intNext = new Intent(this, Oefen.class);
         startActivity(intNext);
     }
 
     public void NaarOverOns(View v){
         // van huidige activiteit naar over ons
-        Intent intNext = new Intent(this, overOns.class);
+        Intent intNext = new Intent(this, OverOns.class);
         startActivity(intNext);
     }
 
-    public void NaarAchievments(View v){
-        // van huidige activiteit naar achievmnets
-        Intent intNext = new Intent(this,achievments.class);
+    public void NaarAchievements(View v){
+        // van huidige activiteit naar achievements
+        Intent intNext = new Intent(this, Achievements.class);
         startActivity(intNext);
     }
 
