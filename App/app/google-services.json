@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "107441817388",
+    "firebase_url": "https://projectmobile-fd5f9.firebaseio.com",
+    "project_id": "projectmobile-fd5f9",
+    "storage_bucket": "projectmobile-fd5f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107441817388:android:cf422201fdb8b9d3f9ce89",
+        "android_client_info": {
+          "package_name": "com.example.amazighapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107441817388-n822cpapeec348j65khb91rf6lf2i970.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfsZjG1NaQ7n5k3E5LnkjGiGm-yINBQO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107441817388-n822cpapeec348j65khb91rf6lf2i970.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
