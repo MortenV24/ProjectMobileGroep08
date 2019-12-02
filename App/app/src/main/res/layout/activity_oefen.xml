@@ -19,12 +19,12 @@
           <Button
               android:layout_height="wrap_content"
               android:layout_width="wrap_content"
-              android:text="catergorie 1">
+              android:text="categorie 1">
           </Button>
           <Button
               android:layout_height="wrap_content"
               android:layout_width="wrap_content"
-              android:text="catergorie 2">
+              android:text="categorie 2">
           </Button>
       </TableRow>
        <TableRow
@@ -34,10 +34,10 @@
            <Button
                android:layout_height="wrap_content"
                android:layout_width="wrap_content"
-               android:text="catergorie 3"
+               android:text="categorie 3"
                android:layout_span="3">
            </Button>
-\
+
        </TableRow>
    </TableLayout>
 
