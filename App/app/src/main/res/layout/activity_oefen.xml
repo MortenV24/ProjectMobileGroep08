@@ -8,37 +8,48 @@
     tools:context=".Oefen">
 
 
-   <TableLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-      <TableRow
-          android:layout_height="wrap_content"
-          android:layout_width="fill_parent">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-          <Button
-              android:layout_height="wrap_content"
-              android:layout_width="wrap_content"
-              android:text="categorie 1">
-          </Button>
-          <Button
-              android:layout_height="wrap_content"
-              android:layout_width="wrap_content"
-              android:text="categorie 2">
-          </Button>
-      </TableRow>
-       <TableRow
-           android:layout_height="wrap_content"
-           android:layout_width="fill_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="catergorie 1"></Button>
 
-           <Button
-               android:layout_height="wrap_content"
-               android:layout_width="wrap_content"
-               android:text="categorie 3"
-               android:layout_span="3">
-           </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="catergorie 2"></Button>
+        </TableRow>
 
-       </TableRow>
-   </TableLayout>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:text="catergorie 3"></Button>
+
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/simpleListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="abhiandroid.com.listexample.MainActivity"></ListView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
