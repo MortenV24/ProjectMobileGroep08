@@ -1,4 +1,4 @@
-package com.example.amazighapp;
+ package com.example.amazighapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,4 +11,8 @@ public class Oefen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oefen);
     }
+
+
 }
+
+

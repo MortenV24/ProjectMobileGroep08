@@ -4,6 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OverOns">
+    tools:context=".OverOns"
+    android:background="@drawable/background">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <ImageView
+                android:layout_width="118dp"
+                android:layout_height="150dp"
+                android:contentDescription="Morten"
+                android:src="@drawable/morten" />
+        </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="118dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="Yaimo"
+                    android:src="@drawable/yaimo" />
+            </TableRow>
+
+
+            <TableRow>
+            <ImageView
+                android:layout_width="118dp"
+                android:layout_height="150dp"
+                android:contentDescription="Yustin"
+                android:src="@drawable/yustin" />
+            </TableRow>
+
+    </TableLayout>
+
+
+
+
+        
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
