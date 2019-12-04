@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void NaarOefenen(View v){
         // van huidige activiteit naar over Oefen
-        Intent intNext = new Intent(this, Oefen.class);
-        startActivity(intNext);
+        Intent intNext2 = new Intent(this, Oefen.class);
+        startActivity(intNext2);
     }
 
     public void NaarOverOns(View v){
