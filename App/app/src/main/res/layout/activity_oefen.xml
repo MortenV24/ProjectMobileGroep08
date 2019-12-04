@@ -1,42 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Oefen"
-    android:orientation="vertical"
-    app:cardCornerRadius="12dp"
-    android:layout_margin="7dp"
-    android:elevation="90dp">
+    tools:context=".Oefen">
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="248dp"
-        android:orientation="vertical"
-        android:background="#121111">
+        android:layout_height="match_parent"
+        android:id="@+id/recycleview">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:scaleType="centerCrop"
-            android:id="@+id/categorie" />
+    </androidx.recyclerview.widget.RecyclerView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/categorie_title"
-            android:text="Categorie_title"
-            android:textSize="20dp"
-            android:textColor="#FFF" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/categorie_subtitle"
-            android:textColor="#FFF"
-            android:text="Categorie_subtitle"/>
-
-    </LinearLayout>
-    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
