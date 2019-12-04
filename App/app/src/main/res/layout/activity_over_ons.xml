@@ -10,44 +10,63 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="564dp">
 
         <TableRow
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_width="fill_parent">
+            android:layout_marginTop="15dp">
 
-            <ImageView
-                android:layout_width="118dp"
-                android:layout_height="150dp"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="40dp"
                 android:contentDescription="Morten"
-                android:src="@drawable/morten" />
-        </TableRow>
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:src="@drawable/morten"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
 
-                <ImageView
-                    android:layout_width="118dp"
-                    android:layout_height="150dp"
-                    android:contentDescription="Yaimo"
-                    android:src="@drawable/yaimo" />
-            </TableRow>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="20dp"
+                android:contentDescription="Morten"
+                android:src="@drawable/yaimo"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
 
-
-            <TableRow>
-            <ImageView
-                android:layout_width="118dp"
-                android:layout_height="150dp"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginStart="20dp"
                 android:contentDescription="Yustin"
-                android:src="@drawable/yustin" />
-            </TableRow>
+                android:src="@drawable/yustin"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+        </TableRow>
+
+        <TableRow>
+
+        </TableRow>
 
     </TableLayout>
 
 
 
-
-
-
+=======
+    <ListView
+        android:id="@+id/simpleListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="abhiandroid.com.listexample.MainActivity"></ListView>
+>>>>>>> Stashed changes
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
