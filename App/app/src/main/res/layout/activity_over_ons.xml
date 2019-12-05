@@ -1,72 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".OverOns"
-    android:background="@drawable/background">
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".OverOns"
+        android:background="@drawable/background"
+        android:label="Over Ons">
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="564dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        >
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
-
+        <TableRow>
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_marginStart="40dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
                 android:contentDescription="Morten"
                 android:src="@drawable/morten"
                 app:civ_border_color="#FF000000"
-                app:civ_border_width="2dp" />
+                app:civ_border_width="2dp"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
                 android:contentDescription="Morten"
                 android:src="@drawable/yaimo"
                 app:civ_border_color="#FF000000"
-                app:civ_border_width="2dp" />
+                app:civ_border_width="2dp"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_marginStart="20dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
                 android:contentDescription="Yustin"
                 android:src="@drawable/yustin"
                 app:civ_border_color="#FF000000"
                 app:civ_border_width="2dp" />
         </TableRow>
 
-        <TableRow>
 
+        <TableRow>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="8pt"
+                android:text="Morten"></TextView>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="8pt"
+                android:text="Yaimo"></TextView>
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="8pt"
+                android:text="Yustin"></TextView>
         </TableRow>
 
     </TableLayout>
 
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="7pt"
+        android:text="Wij zijn junior applicatieontwikkelaars van het bedrijf MonkeyBusiness
+en hebben deze applicatie gemaakt in opdracht van Dhr. Hannibal voor de Universiteit Leiden.">
 
+    </TextView>
 
-=======
-    <ListView
-        android:id="@+id/simpleListView"
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context="abhiandroid.com.listexample.MainActivity"></ListView>
->>>>>>> Stashed changes
+        android:layout_marginTop="35dp"
+        >
+    <TableRow>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:contentDescription="Hannibal"
+        android:src="@drawable/hannibal"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"/>
+    </TableRow>
+        <TableRow>
+        <TextView
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="8pt"
+            android:text="Dhr. Hannibal"></TextView>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="7pt"
+        android:text="Ik ben Dhr. Hannibal en heb deze applicatie laten ontwikkelen zodat Nederlandse kinderen
+uit Noord-Afrikaanse gezinnen op een speelse wijze hun oorspronkelijke taal kunnen leren.">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-
+    </TextView>
+</LinearLayout>
