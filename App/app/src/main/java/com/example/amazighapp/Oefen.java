@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +24,8 @@ import org.w3c.dom.Text;
 
     private RecyclerView categorieList;
     private DatabaseReference mDatabase;
+    private View.OnClickListener onClick;
+    private long categorie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,13 @@ import org.w3c.dom.Text;
        categorieList=(RecyclerView)findViewById(R.id.recycleview);
        categorieList.setHasFixedSize(true);
        categorieList.setLayoutManager(new LinearLayoutManager(this));
+
+        onClick = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NaarOefenItem(v);
+            }
+        };
     }
 
      @Override
@@ -43,17 +53,15 @@ import org.w3c.dom.Text;
                  (Categorie.class,R.layout.oefen_row,CategorieViewHolder.class,mDatabase) {
              @Override
              protected void populateViewHolder(CategorieViewHolder viewHolder, Categorie model, int position){
+                 categorie = position;
                  viewHolder.setTitle(model.getTitle());
                  viewHolder.setDesc(model.getDesc());
-                 viewHolder.setIamge(getApplicationContext(),model.getImage());
+                 viewHolder.setImage(getApplicationContext(),model.getImage());
              }
          };
-
-         categorieList.setAdapter(firebaseRecyclerAdapter);
      }
 
-     public static class CategorieViewHolder extends RecyclerView.ViewHolder
-     {
+     public static class CategorieViewHolder extends RecyclerView.ViewHolder {
         View mView;
         public CategorieViewHolder(View itemView){
             super(itemView);
@@ -69,10 +77,16 @@ import org.w3c.dom.Text;
             TextView categorie_desc=(TextView)mView.findViewById(R.id.categorie_desc);
             categorie_desc.setText(desc);
         }
-        public void setIamge(Context ctx,String image){
+        public void setImage(Context ctx,String image){
             ImageView categorie_image=(ImageView)mView.findViewById(R.id.categorie_image);
             Picasso.with(ctx).load(image).into(categorie_image);
         }
+     }
+
+     public void NaarOefenItem(View v){
+         Intent intNext = new Intent(this, OefenItem.class);
+         intNext.putExtra("Categorie", categorie);
+         startActivity(intNext);
      }
  }
 
