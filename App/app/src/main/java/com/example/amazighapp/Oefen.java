@@ -59,6 +59,7 @@ import org.w3c.dom.Text;
                  viewHolder.setImage(getApplicationContext(),model.getImage());
              }
          };
+         categorieList.setAdapter(firebaseRecyclerAdapter);
      }
 
      public static class CategorieViewHolder extends RecyclerView.ViewHolder {
