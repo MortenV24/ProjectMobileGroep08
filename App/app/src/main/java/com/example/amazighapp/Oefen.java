@@ -38,11 +38,11 @@ import org.w3c.dom.Text;
        categorieList.setHasFixedSize(true);
        categorieList.setLayoutManager(new LinearLayoutManager(this));
 
-        onClick = new View.OnClickListener() {
+       onClick = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NaarOefenItem(v);
-            }
+               NaarOefenItem(v);
+           }
         };
     }
 
