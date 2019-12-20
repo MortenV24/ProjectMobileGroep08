@@ -13,6 +13,7 @@
         <activity android:name=".OverOns" />
         <activity android:name=".Oefen" />
         <activity android:name=".Speel" />
+        <activity android:name=".OefenItem"/>
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashScreen">
